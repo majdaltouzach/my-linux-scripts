@@ -1,0 +1,5 @@
+#!/bin/sh 
+cd $HOME/Music/MusicServerSync/
+echo "Input link"
+read LINK 
+spotdl $LINK --bitrate 320k

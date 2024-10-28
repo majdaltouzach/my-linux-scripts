@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "Insert link here: " 
+read LINK 
+spotdl $LINK --bitrate 320k
+exit 0

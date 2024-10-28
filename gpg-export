@@ -1,0 +1,6 @@
+#!/bin/sh 
+cd $HOME/.gnupg/.exports/
+gpg --list-keys
+echo "Enter KEYID: "
+read KEYID
+gpg --armor --export-secret-keys $KEYID | gpg --armor --symmetric --output export_${KEYID}.sec.asc

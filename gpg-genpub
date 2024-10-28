@@ -1,0 +1,6 @@
+#!/bin/sh 
+cd $HOME/.gnupg/.pub/
+gpg --list-keys
+echo "Enter email or KEYID: "
+read INPUT
+gpg --armor --export $INPUT > ${INPUT}_pub.sec.asc

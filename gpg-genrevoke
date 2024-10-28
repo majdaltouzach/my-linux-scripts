@@ -1,0 +1,9 @@
+#!/bin/sh
+mkdir -p $HOME/.gnupg/.revoke/
+cd $HOME/.gnupg/.revoke/
+gpg --list-keys 
+echo "Insert Key ID for Revocation:"
+read KEYID
+gpg  --output "revoke-$KEYID.asc" --gen-revoke $KEYID
+gpg --import "revoke-$KEYID.asc"
+gpg --keyserver keys.openpgp.org --send-keys $KEYID

@@ -1,0 +1,4 @@
+#!/bin/sh
+xfce4-terminal -x sudo firewall-cmd --add-port=41184/tcp
+sudo firewall-cmd --reload
+exit 0

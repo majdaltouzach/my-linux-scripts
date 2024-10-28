@@ -1,0 +1,6 @@
+#!/bin/sh
+echo Input link here: 
+read LINK 
+yt-dlp $LINK --merge-output-format mp4 --embed-thumbnail --embed-chapters --embed-metadata
+
+exit 0

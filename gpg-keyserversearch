@@ -1,0 +1,5 @@
+#!/bin/sh
+gpg --list-keys
+echo "Insert Key ID:"
+read KEYID
+gpg --keyserver keys.openpgp.org --search-keys $KEYID

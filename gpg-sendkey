@@ -1,0 +1,5 @@
+#!/bin/sh 
+gpg --list-keys
+echo "Input Key ID here: "
+read KEYID
+gpg --keyserver keys.openpgp.org --send-keys $KEYID

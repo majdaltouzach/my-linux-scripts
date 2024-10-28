@@ -1,0 +1,6 @@
+#!/bin/sh 
+cd $HOME/.gnupg/.priv/
+gpg --list-keys
+echo "Enter email or KEYID: "
+read INPUT
+gpg --armor --export-secret-keys $INPUT > ${INPUT}_priv.sec.asc

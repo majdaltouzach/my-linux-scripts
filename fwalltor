@@ -1,0 +1,4 @@
+#!/bin/sh 
+xfce4-terminal -x sudo firewall-cmd --add-service=tor-socks --zone=public
+sudo firewall-cmd --reload 
+exit 0
