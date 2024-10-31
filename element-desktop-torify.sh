@@ -1,3 +1,3 @@
 #!/bin/sh 
-xfce4-terminal -x torsocks on
+torsocks on
 /usr/bin/element-desktop
