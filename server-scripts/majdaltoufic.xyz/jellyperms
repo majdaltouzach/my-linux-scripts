@@ -1,0 +1,3 @@
+#!/bin/sh 
+sudo chown -R signmail:jellyfin /mnt/majdaltoufic_cloud/MyMusic/ 
+sudo chmod -R g+rwx /mnt/majdaltoufic_cloud/MyMusic 
