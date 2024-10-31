@@ -1,2 +1,2 @@
 #!/bin/sh
-ristretto $HOME/Pictures/
+ristretto $HOME/Pictures/*
