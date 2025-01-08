@@ -1,0 +1,6 @@
+#!/bin/sh
+sudo groupadd mullvadbrowser 
+sudo groupadd android 
+sudo groupadd jetbrains 
+sudo groupadd grayjay
+sudo usermod -aG mullvadbrowser,android,jetbrains,grayjay $USER

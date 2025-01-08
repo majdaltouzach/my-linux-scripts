@@ -1,5 +1,6 @@
 #!/bin/sh 
-cd $HOME/.gnupg/.pub/
+mkdir -p $HOME/.gnupg/.pubs
+cd $HOME/.gnupg/.pubs/
 gpg --list-keys
 echo "Enter email or KEYID: "
 read INPUT
