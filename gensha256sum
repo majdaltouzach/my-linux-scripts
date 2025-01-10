@@ -1,0 +1,4 @@
+#!/bin/sh 
+echo "Enter password: "
+read PASSWD 
+echo -n "${PASSWD}" | sha256sum

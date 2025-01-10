@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 iatest=$(expr index "$-" i)
-fastfetch
 
 #######################################################
 # SOURCED ALIAS'S AND SCRIPTS BY zachbrowne.me
@@ -28,6 +27,7 @@ if [[ $iatest -gt 0 ]]; then bind "set bell-style visible"; fi
 export HISTFILESIZE=10000
 export HISTSIZE=500
 export HISTTIMEFORMAT="%F %T" # add timestamp to history
+export GTK_THEME=Arc-Dark
 
 # Don't put duplicate lines in the history and do not add lines that start with a space
 export HISTCONTROL=erasedups:ignoredups:ignorespace
@@ -75,6 +75,7 @@ alias vids='videos'
 alias photos='pictures'
 alias movies='videos'
 alias pics='pictures'
+alias matrix='cmatrix'
 # Test
 # To have colors for ls and all grep commands such as grep, egrep and zgrep
 export CLICOLOR=1
@@ -635,11 +636,12 @@ if [[ $- == *i* ]]; then
     bind '"\C-f":"zi\n"'
 fi
 
-export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bin:/.local/share/flatpak/exports/bin:$HOME/mullvad-browser/Browser:$HOME/scripts"
+export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bin:/.local/share/flatpak/exports/bin:$HOME/mullvad-browser/Browser:$HOME/scripts:/opt/jetbrains-toolbox:/opt/jetbrains-toolbox/Toolbox/apps:/opt/jetbrains-toolbox/Toolbox/scripts"
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 #source /usr/share/bash-completion/completions/yay
 source /usr/share/bash-completion/completions/yay
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
