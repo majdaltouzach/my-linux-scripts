@@ -1,3 +1,3 @@
 #!/bin/sh
-konsole -e sudo firewall-cmd --set-default-zone=public
+xfce4-terminal -x sudo firewall-cmd --set-default-zone=public
 exit 0
