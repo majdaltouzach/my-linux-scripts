@@ -636,7 +636,7 @@ if [[ $- == *i* ]]; then
     bind '"\C-f":"zi\n"'
 fi
 
-export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bin:/.local/share/flatpak/exports/bin:$HOME/mullvad-browser/Browser:$HOME/scripts:/opt/jetbrains-toolbox:/opt/jetbrains-toolbox/Toolbox/apps:/opt/jetbrains-toolbox/Toolbox/scripts"
+export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bin:/.local/share/flatpak/exports/bin:$HOME/mullvad-browser/Browser:$HOME/scripts:/opt/jetbrains-toolbox:/opt/jetbrains-toolbox/Toolbox/apps:/opt/jetbrains-toolbox/Toolbox/scripts:$HOME/scripts/local"
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
