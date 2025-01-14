@@ -1,2 +1,2 @@
 #!/bin/sh 
-sudo systemctl restart NetworkManager
+xfce4-terminal -x sudo systemctl restart NetworkManager
