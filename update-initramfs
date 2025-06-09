@@ -1,0 +1,6 @@
+#!/bin/sh 
+for kernelver in $(ls /usr/lib/modules); do
+    echo "Updating initramfs for kernel: $kernelver"
+    sudo kernel-install add "$kernelver" "/usr/lib/modules/$kernelver/vmlinuz"
+done
+
