@@ -1,4 +1,5 @@
 #!/bin/sh 
+mkdir -p $HOME/.gnupg/.priv
 cd $HOME/.gnupg/.priv/
 gpg --list-keys
 echo "Enter email or KEYID: "
